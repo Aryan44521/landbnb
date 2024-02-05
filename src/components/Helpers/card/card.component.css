@@ -1,0 +1,38 @@
+.staricon {
+  width: 20px;
+  fill: rgb(89, 89, 89);
+}
+
+.card {
+  width: 100%;
+  height: 400px;
+  border-radius: 20px;
+
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 40%;
+  }
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.imageCont {
+  width: 100%;
+  height: 70%;
+}
+
+.info {
+  border-radius: 20px;
+  padding-top: 5px;
+}
+
+span {
+  content: "\20B9";
+  font-family: serif;
+}

@@ -1,0 +1,39 @@
+<div>
+    <div class="topBar">
+        <div class="logoContainer">
+            <div>
+                <img class="rotate" src="https://www.vectorlogo.zone/logos/airbnb/airbnb-icon.svg" alt="logo"
+                    height="30px" width="30px">
+            </div>
+            <div>
+                landbnb
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="navbar">
+        <div class="navbarItem">
+            <p>where</p>
+            <p>search destinations</p>
+        </div>
+        <div class="navbarItem">
+            <p>Who</p>
+            <p>Add guests</p>
+        </div>
+
+    </div>
+    <hr class="ruler">
+    <div>
+        <nav>
+            <div class="uldiv">
+
+                <div *ngFor="let item of logos_array" >
+                    <app-nav-item [icon_details]="item" [routerLink]="[item.icon_route] " ></app-nav-item>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+.list-div {
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    /* background-color: aqua; */
+    color: rgb(89, 89, 89);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .icon {
+    width: 25px;
+    fill: rgb(89, 89, 89);
+  }
+
+  .container{
+    margin: 5px;
+    /* background-color: papayawhip; */
+
+  }
+
+  p{
+    font-size: small;
+    
+    text-align: center;
+  }
