@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from '../components/home/home.component';
 import { BeachComponent } from '../components/Places/beach/beach.component';
-import { TreehousesComponent } from '../components/Places/treehouses/treehouses.component';
+
 import { CampingComponent } from '../components/Places/camping/camping.component';
 import { TinyHouseComponent } from '../components/Places/tiny-house/tiny-house.component';
 import { AmaingPoolsComponent } from '../components/Places/amaing-pools/amaing-pools.component';
@@ -19,11 +19,12 @@ import { SurfingComponent } from '../components/Places/surfing/surfing.component
 import { DisplayUrlComponent } from '../components/Helpers/display-url/display-url.component';
 import { UniqueComponent } from '../components/Places/unique/unique.component';
 import { WindmillComponent } from '../components/Places/windmill/windmill.component';
+import { RoomDetailsComponent } from '../components/Helpers/room-details/room-details.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'beach', component: BeachComponent },
-  { path: 'treehouse', component: TreehousesComponent },
+  
   { path: 'camping', component: CampingComponent },
   { path: 'tiny_house', component: TinyHouseComponent },
   { path: 'amaing_pools', component: AmaingPoolsComponent },
@@ -40,5 +41,6 @@ export const routes: Routes = [
   { path: 'surfing', component: SurfingComponent },
   { path: 'unique', component: UniqueComponent },
   { path: 'windmill', component: WindmillComponent },
+  {path:'roomdetails',component:RoomDetailsComponent},
   { path: 'd', component: DisplayUrlComponent },
 ];

@@ -1,17 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { NavItemComponent } from '../Helpers/nav-item/nav-item.component';
-import { Router, RouterLink } from '@angular/router';
+import { NavItemComponent } from '../nav-item/nav-item.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-navbar',
+  selector: 'app-semi-bar',
   standalone: true,
-  imports: [FormsModule, CommonModule, NavItemComponent, RouterLink],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css',
+  imports: [FormsModule,CommonModule,NavItemComponent,RouterLink],
+  templateUrl: './semi-bar.component.html',
+  styleUrl: './semi-bar.component.css'
 })
-export class NavbarComponent {
+export class SemiBarComponent {
   isHeaderHidden = true;
   isScrolled: boolean = false;
 
@@ -25,7 +25,8 @@ export class NavbarComponent {
       this.isScrolled = false;
     }
   }
-  
+
+
   locations = [
     'https://a0.muscache.com/pictures/f9ec8a23-ed44-420b-83e5-10ff1f071a13.jpg',
     'https://a0.muscache.com/im/pictures/7b5cf816-6c16-49f8-99e5-cbc4adfd97e2.jpg?im_w=320',

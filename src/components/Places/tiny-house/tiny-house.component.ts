@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CardComponent } from '../../Helpers/card/card.component';
+import { NavbarComponent } from '../../navbar/navbar.component';
 
 @Component({
   selector: 'app-tiny-house',
   standalone: true,
-  imports: [FormsModule,CommonModule,CardComponent],
+  imports: [FormsModule,CommonModule,CardComponent,NavbarComponent],
   templateUrl: './tiny-house.component.html',
   styleUrl: './tiny-house.component.css'
 })

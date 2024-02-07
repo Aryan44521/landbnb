@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CardComponent } from '../../Helpers/card/card.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { NavbarComponent } from '../../navbar/navbar.component';
 
 @Component({
   selector: 'app-amaing-pools',
   standalone: true,
-  imports: [CardComponent,FormsModule,CommonModule],
+  imports: [CardComponent,FormsModule,CommonModule,NavbarComponent],
   templateUrl: './amaing-pools.component.html',
   styleUrl: './amaing-pools.component.css'
 })

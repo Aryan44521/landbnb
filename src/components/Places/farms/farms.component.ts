@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { CardComponent } from '../../Helpers/card/card.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { NavbarComponent } from '../../navbar/navbar.component';
 @Component({
   selector: 'app-farms',
   standalone: true,
-  imports: [CardComponent,FormsModule,CommonModule],
+  imports: [CardComponent,FormsModule,CommonModule,NavbarComponent],
   templateUrl: './farms.component.html',
   styleUrl: './farms.component.css'
 })

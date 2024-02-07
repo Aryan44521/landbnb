@@ -13,7 +13,7 @@
         </div>
         <div class="dynamicArea">
 
-            <div class="minBar" *ngIf="isScrolled">
+            <div class="minBar" >
                 <div class="any">Anywhere</div>
                 <div class="any">Anyweek</div>
                 <div class="addGuests">
@@ -27,18 +27,7 @@
 
             </div>
 
-            <div class="maxBar" *ngIf="!isScrolled">
-                <div class="stayView">
-                    <div class="cont">Stays</div>
-                    <div class="cont">Experiences</div>
-                    <div class="cont">Online Experiences</div>
-                </div>
-                <div class="minBar">
-                    <div class="any">Where</div>
-                    <div class="any">Check In</div>
-                    <div class="any">Check Out</div>
-                </div>
-            </div>
+            
 
 
 
@@ -69,11 +58,5 @@
         </div>
     </div>
     <hr class="ruler">
-    <div class="iconLists">
-        <div class="uldiv">
-            <div *ngFor="let item of logos_array">
-                <app-nav-item [icon_details]="item" [routerLink]="[item.icon_route] "></app-nav-item>
-            </div>
-        </div>
-    </div>
+    
 </div>
