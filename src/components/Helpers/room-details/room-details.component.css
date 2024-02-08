@@ -26,6 +26,12 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  height: 500px;
+}
+
+.icon{
+  border:10px solid back;
+  border-radius: 50%;
 }
 
 .img1 {
@@ -42,14 +48,33 @@
 }
 
 .room .amenities {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.room .amenities .scrollableContent {
+  width: 60%;
+  background-color: white;
+}
+.room .amenities .scrollableContent .roomName .reviewBox{
+  display: flex;
+  align-items: center;
+}
+.room .amenities .scrollableContent .roomHost{
+  display: flex;
+  align-items: center;
 }
 
 .room .amenities .rateCard {
-  border: 1px solid black;
-  border-radius: 20px;
+  border: 1px solid rgb(100, 99, 99);
+  border-radius: 15px;
   background-color: white;
   padding: 10px;
-  width: 25%;
+  width: 35%;
+  box-shadow: 0 2px 3px 0 rgba(71, 71, 71, 0.2),
+    0 6px 20px 0 rgba(87, 87, 87, 0.19);
+  /* position: sticky; */
 }
 
 .room .amenities .rateCard .check {
@@ -61,6 +86,7 @@
   border-radius: 10px;
   padding: 5px;
   height: 40px;
+  cursor: pointer;
 }
 
 .room .amenities .rateCard .check .c1 {
@@ -83,10 +109,31 @@
   color: white;
   /* height:30px; */
   padding: 7px;
+  cursor: pointer;
+  margin: 10 0 10 0;
 }
 
-.room .amenities .rateCard .text{
-    
+.room .amenities .rateCard .text {
+}
+
+.room .amenities .rateCard .calculations {
+  margin: 10 0 10 0;
+}
+
+.room .amenities .rateCard .calculations .linear {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.makeBold {
+  font-weight: 900;
+}
+
+.makeLighter {
+  font-weight: 100;
+  color: rgb(107, 105, 104);
 }
 
 .icon {

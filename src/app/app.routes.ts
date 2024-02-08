@@ -22,7 +22,7 @@ import { WindmillComponent } from '../components/Places/windmill/windmill.compon
 import { RoomDetailsComponent } from '../components/Helpers/room-details/room-details.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component:IconicSitesComponent },
   { path: 'beach', component: BeachComponent },
   
   { path: 'camping', component: CampingComponent },

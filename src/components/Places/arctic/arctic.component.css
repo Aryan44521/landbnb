@@ -15,8 +15,7 @@
   row-gap: 0px; 
   column-gap: 40px; 
   align-self: center;
-  margin-left: 80px;
-  margin-right: 80px;
+  /
 }
 
 @media only screen and (max-width: 1700px) {
