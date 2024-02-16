@@ -1,5 +1,5 @@
 .room {
-  background-color: peachpuff;
+  
   width: 60%;
   margin: 0 auto;
 }
@@ -7,6 +7,8 @@
 .room .display1 {
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .room .display1 .adjective {
@@ -29,8 +31,8 @@
   height: 500px;
 }
 
-.icon{
-  border:10px solid back;
+.icon {
+  border: 10px solid back;
   border-radius: 50%;
 }
 
@@ -57,20 +59,24 @@
   width: 60%;
   background-color: white;
 }
-.room .amenities .scrollableContent .roomName .reviewBox{
+.room .amenities .scrollableContent .roomName .reviewBox {
   display: flex;
   align-items: center;
 }
-.room .amenities .scrollableContent .roomHost{
+.room .amenities .scrollableContent .roomHost {
   display: flex;
   align-items: center;
 }
 
+.room .amenities .scrollableContent .roomHost .roomHostBox {
+}
+
 .room .amenities .rateCard {
+  height: 400px;
   border: 1px solid rgb(100, 99, 99);
   border-radius: 15px;
   background-color: white;
-  padding: 10px;
+  padding: 30px;
   width: 35%;
   box-shadow: 0 2px 3px 0 rgba(71, 71, 71, 0.2),
     0 6px 20px 0 rgba(87, 87, 87, 0.19);
@@ -140,5 +146,99 @@
   width: 20px;
   fill: rgb(89, 89, 89);
   padding: 4px;
+  cursor: pointer;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+.spaceText {
+  padding-left: 10px;
+}
+
+.reviewCont {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+  grid-gap: 20px;
+}
+
+.placeOffers {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+  grid-gap: 20px;
+}
+
+.lowerSection {
+  background-color: rgb(247, 247, 247);
+}
+
+.footer {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.dimtext {
+  font-size: smaller;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.dimtext:hover {
+  /* Underline effect on hover */
+  text-decoration: underline;
+}
+
+.footerReg1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  grid-gap: 20px;
+}
+
+.footerConclude {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviewCardHidden {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  height: 800px;
+  width: 50%;
+  visibility: hidden;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: white;
+}
+
+.reviewCardDisplay {
+  top:50vh;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.6s, top 0.6s;
+  transition-timing-function: ease-out;
+  box-shadow: 0 2px 3px 0 rgba(71, 71, 71, 0.2),
+    0 6px 20px 0 rgba(87, 87, 87, 0.19);
+}
+
+.reviewItem {
+  border: black;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.setBlur{
+  filter:blur(5px);
+  pointer-events: none;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.cross{
   cursor: pointer;
 }

@@ -3,6 +3,7 @@ import { Component, HostListener } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NavItemComponent } from '../nav-item/nav-item.component';
 import { RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-semi-bar',
@@ -12,6 +13,13 @@ import { RouterLink } from '@angular/router';
   styleUrl: './semi-bar.component.css'
 })
 export class SemiBarComponent {
+  constructor(private router: Router) { }
+
+  navigateToRoute() {
+    // Navigate to the desired route
+    this.router.navigate(['/']);
+  }
+  
   isHeaderHidden = true;
   isScrolled: boolean = false;
 

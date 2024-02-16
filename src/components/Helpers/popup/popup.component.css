@@ -1,0 +1,49 @@
+.main {
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar {
+  width: 30%;
+  height: full;
+  padding: 10px;
+}
+.s1 {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  width: 70%;
+  
+  height: 700px;
+  overflow: auto;
+  padding: 20px;
+  padding-right: 0px;
+}
+
+.lhspace {
+  padding-left: 20px;
+}
+
+.s2 {
+  padding: 25px;
+}
+
+.s3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.singleReview {
+    padding: 20px;
+}
+
+.response{
+    
+    margin-top: 10px;
+    margin-left: 35px;
+    margin-right: 35px;
+}

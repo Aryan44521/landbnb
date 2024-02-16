@@ -1,5 +1,5 @@
-<div><app-semi-bar></app-semi-bar></div>
-<div class="room">
+<div [class.setBlur]="pop"><app-semi-bar></app-semi-bar></div>
+<div class="room" [class.setBlur]="pop">
 
     <div class="display1">
         <div class="adjective">SarNest with Nature</div>
@@ -40,7 +40,7 @@
                             <path
                                 d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
                         </svg> </span>
-                    <span> 4.96</span>
+                    <span class="spaceText"> 4.96</span>
                     <span> 7 reviews</span>
 
                 </div>
@@ -52,24 +52,154 @@
                     <path
                         d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
                 </svg>
-                <div>
-                    <p>Hosted by dilip</p>
-                    <p class="makeLighter">super Host 1 year Hosting</p>
+                <div class="roomHostBox">
+                    <p class="spaceText">Hosted by dilip</p>
+
                 </div>
             </div>
             <hr>
-            <div class="roomFeatures"></div>
+            <div class="roomFeatures">
+                <div class="flexCenter">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" width="20px"
+                        viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M128 32C92.7 32 64 60.7 64 96V352h64V96H512V352h64V96c0-35.3-28.7-64-64-64H128zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480H563.2c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2H19.2z" />
+                    </svg>
+                    <p class="spaceText">dedicated workspace</p>
+                </div>
+                <div class="flexCenter">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" width="20px"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M211.8 488.6C213.4 491.1 213.9 494.2 213.2 497.1C212.6 500 210.8 502.6 208.3 504.2C205.7 505.8 202.7 506.3 199.7 505.7C138.3 491.8 84.1 455.8 47.5 404.5C11 353.2-5.4 290.3 1.6 227.7C8.5 165 38.3 107.2 85.3 65.2C132.2 23.2 193 0 256 0C257.5 0 258.1 .3 260.3 .9C261.7 1.4 262.1 2.3 264 3.3C265.1 4.4 265.9 5.6 266.5 7C267 8.4 267.3 9.8 267.3 11.3V112.3L291.8 86.4C292.8 85.3 294 84.4 295.4 83.8C296.7 83.2 298.2 82.9 299.7 82.9C301.2 82.8 302.6 83.1 304 83.6C305.4 84.1 306.7 84.9 307.8 85.9C308.8 87 309.7 88.2 310.3 89.5C310.9 90.9 311.3 92.4 311.3 93.8C311.3 95.3 311.1 96.8 310.6 98.2C310 99.6 309.2 100.8 308.2 101.9L264.2 148.5C263.1 149.6 261.9 150.5 260.5 151.1C259 151.7 257.5 152 255.1 152C254.5 152 252.9 151.7 251.5 151.1C250.1 150.5 248.8 149.6 247.8 148.5L203.7 101.9C201.7 99.7 200.6 96.8 200.7 93.8C200.7 90.8 202 87.1 204.2 85.9C206.4 83.9 209.3 82.8 212.3 82.9C215.3 82.9 218.1 84.2 220.2 86.4L244.7 112.4V22.9C188.3 25.6 134.9 48.7 94.2 87.9C53.6 127 28.5 179.6 23.6 235.8C18.7 292 34.4 348.1 67.7 393.7C100.1 439.2 149.7 471.2 204.7 483.6C207.6 484.3 210.2 486.1 211.8 488.6L211.8 488.6zM171.4 126.1C170.6 127.4 169.5 128.5 168.3 129.3C147.8 143.2 131.1 161.9 119.5 183.8C107.9 205.7 101.8 230.1 101.8 254.9C101.8 279.7 107.9 304.1 119.5 325.1C131.1 347.9 147.8 366.6 168.3 380.5C170.8 382.2 172.5 384.8 173 387.8C173.6 390.7 172.1 393.8 171.3 396.2C169.6 398.7 166.1 400.4 164 400.1C161.1 401.5 158 400.9 155.6 399.2C132 383.2 112.8 361.7 99.5 336.5C86.2 311.4 79.2 283.4 79.2 254.9C79.2 226.5 86.2 198.4 99.5 173.3C112.8 148.1 132 126.6 155.6 110.6C156.8 109.8 158.2 109.2 159.6 108.8C161.1 108.5 162.6 108.5 164.1 108.8C165.5 109 166.9 109.6 168.2 110.4C169.5 111.2 170.5 112.3 171.4 113.5C172.2 114.7 172.8 116.1 173.1 117.6C173.4 119.1 173.4 120.6 173.1 122C172.8 123.5 172.3 124.9 171.4 126.1H171.4zM340.9 383.5C341.7 382.3 342.8 381.2 343.1 380.4V380.3C364.4 366.3 381.1 347.6 392.7 325.7C404.2 303.9 410.2 279.5 410.2 254.8C410.2 230.1 404.2 205.7 392.7 183.8C381.1 161.1 364.4 143.3 343.1 129.3C342.8 128.5 341.7 127.4 340.9 126.2C340.1 124.9 339.5 123.5 339.3 122.1C338.1 120.6 339 119.1 339.3 117.7C339.6 116.2 340.2 114.8 341 113.6C341.9 112.4 342.1 111.3 344.2 110.5C345.4 109.7 346.8 109.2 348.3 108.9C349.8 108.6 351.2 108.6 352.7 108.9C354.2 109.2 355.5 109.8 356.8 110.7C380.2 126.7 399.5 148.2 412.7 173.3C426 198.4 432.1 226.4 432.1 254.8C432.1 283.3 426 311.3 412.7 336.4C399.5 361.5 380.2 383 356.8 399C355.5 399.9 354.2 400.5 352.7 400.8C351.2 401.1 349.8 401.1 348.3 400.8C346.8 400.5 345.4 399.1 344.2 399.2C342.1 398.4 341.9 397.3 341 396.1C340.2 394.9 339.6 393.5 339.3 392C339 390.6 338.1 389.1 339.3 387.6C339.5 386.2 340.1 384.8 340.9 383.5V383.5zM312.3 6.3C368.5 19 418.7 50.3 455 95C485.4 132.6 504.6 178 510.3 226C515.9 274 507.9 322.7 487.1 366.3C466.2 409.9 433.5 446.8 392.6 472.6C351.7 498.3 304.4 512 256 512C254.5 512 253.1 511.7 251.7 511.1C250.3 510.6 249.1 509.7 248 508.7C246.1 507.6 246.1 506.4 245.6 505C245 503.6 244.7 502.2 244.7 500.7V401.5L220.2 427.5C218.1 429.7 215.3 430.1 212.3 431.1C209.3 431.2 206.4 430 204.2 427.1C202 425.9 200.7 423.1 200.7 420.1C200.6 417.1 201.7 414.2 203.7 412L247.8 365.4C249.1 363.2 252.9 362 255.1 362C259.1 362 262 363.2 264.2 365.4L308.2 412C310.3 414.2 311.4 417.1 311.3 420.1C311.2 423.1 309.9 425.9 307.8 427.1C305.6 430 302.7 431.2 299.7 431.1C296.7 430.1 293.8 429.7 291.8 427.5L267.3 401.6V489.1C323.7 486.3 377.1 463.3 417.8 424.1C458.5 384.1 483.6 332.4 488.5 276.2C493.3 219.1 477.7 163.9 444.4 118.3C411.1 72.8 362.4 40.8 307.4 28.4C305.9 28 304.6 27.4 303.3 26.6C302.1 25.7 301.1 24.6 300.3 23.4C299.5 22.1 298.1 20.7 298.7 19.3C298.5 17.8 298.5 16.3 298.8 14.9C299.2 13.4 299.8 12 300.6 10.8C301.5 9.6 302.6 8.6 303.8 7.8C305.1 7 306.5 6.5 307.9 6.2C309.4 5.9 310.9 6 312.3 6.3L312.3 6.3zM353.1 256.1C353.1 287.5 335.6 317.2 303.8 339.6C301.7 341.1 299 341.9 296.4 341.6C293.7 341.4 291.2 340.3 289.4 338.4L219.3 268.6C217.1 266.5 215.1 263.6 215.9 260.6C215.9 257.6 217.1 254.7 219.2 252.6C221.4 250.5 224.2 249.3 227.2 249.3C230.2 249.3 233.1 250.5 235.2 252.6L298.3 315.4C319.1 298.3 330.5 277.5 330.5 256.1C330.5 232.2 316.4 209.1 290.8 191C288.3 189.3 286.7 186.7 286.2 183.7C285.7 180.8 286.3 177.7 288.1 175.3C289.8 172.8 292.4 171.2 295.4 170.7C298.3 170.2 301.4 170.8 303.8 172.6C335.6 195 353.1 224.7 353.1 256.1V256.1zM216.7 341.5C213.7 342 210.7 341.3 208.2 339.6C176.5 317.2 158.1 287.5 158.1 256.1C158.1 224.7 176.5 195 208.2 172.6C210.4 171 213.1 170.3 215.7 170.5C218.4 170.8 220.8 171.9 222.7 173.8L292.8 243.6C294.9 245.7 296.1 248.6 296.1 251.6C296.1 254.6 294.1 257.4 292.8 259.6C290.7 261.7 287.8 262.9 284.9 262.9C281.9 262.9 278.1 261.7 276.9 259.6L213.8 196.7C192.9 214 181.6 234.7 181.6 256.1C181.6 279.1 195.7 303.1 221.3 321.1C223.7 322.9 225.4 325.5 225.9 328.5C226.4 331.4 225.7 334.4 224 336.9C222.3 339.3 219.6 341 216.7 341.5L216.7 341.5z" />
+                    </svg>
+                    <p class="spaceText">dive in</p>
+                </div>
+
+
+                <div class="flexCenter">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" width="20px"
+                        viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z" />
+                    </svg>
+                    <p class="spaceText">experienced host</p>
+                </div>
+
+            </div>
             <hr>
             <div class="hostDetails">
                 <p></p>
                 <div class="card"></div>
             </div>
             <div class="placeDetails">
-                <p></p>
+                <p>Imagine a sanctuary of peace and serenity away from the hustle and bustle of everyday life, amidst
+                    lush greenery. Turn this vision into a reality at this lovely farm stay in Gujarat's picturesque
+                    village of Kutch. This enormous eco-stay is encircled by 65 acres of endless fields and fruit
+                    orchards!</p>
                 <p></p>
                 <hr>
             </div>
-            <div class="placeOffers"></div>
+            <p>What this place offers</p>
+            <div class="placeOffers">
+
+                <div class="flexCenter">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" width="20px"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M256 96c0-53 43-96 96-96h38.4C439.9 0 480 40.1 480 89.6V176v16V376c0 75.1-60.9 136-136 136s-136-60.9-136-136V296c0-22.1-17.9-40-40-40s-40 17.9-40 40V464c0 26.5-21.5 48-48 48s-48-21.5-48-48V296c0-75.1 60.9-136 136-136s136 60.9 136 136v80c0 22.1 17.9 40 40 40s40-17.9 40-40V192H352c-53 0-96-43-96-96zm144-8a24 24 0 1 0 -48 0 24 24 0 1 0 48 0z" />
+                    </svg>
+                    <p class="spaceText">Garden View</p>
+                </div>
+                <div class="flexCenter"><svg xmlns="http://www.w3.org/2000/svg" height="20px" width="20px"
+                        viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M54.2 202.9C123.2 136.7 216.8 96 320 96s196.8 40.7 265.8 106.9c12.8 12.2 33 11.8 45.2-.9s11.8-33-.9-45.2C549.7 79.5 440.4 32 320 32S90.3 79.5 9.8 156.7C-2.9 169-3.3 189.2 8.9 202s32.5 13.2 45.2 .9zM320 256c56.8 0 108.6 21.1 148.2 56c13.3 11.7 33.5 10.4 45.2-2.8s10.4-33.5-2.8-45.2C459.8 219.2 393 192 320 192s-139.8 27.2-190.5 72c-13.3 11.7-14.5 31.9-2.8 45.2s31.9 14.5 45.2 2.8c39.5-34.9 91.3-56 148.2-56zm64 160a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z" />
+                    </svg>
+                    <p class="spaceText">Wifi</p>
+                </div>
+                <div class="flexCenter">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" width="20px"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z" />
+                    </svg>
+                    <p class="spaceText">Dedicated Workspace</p>
+                </div>
+                <div class="flexCenter"><svg xmlns="http://www.w3.org/2000/svg" height="20px" width="20px"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM192 256h48c17.7 0 32-14.3 32-32s-14.3-32-32-32H192v64zm48 64H192v32c0 17.7-14.3 32-32 32s-32-14.3-32-32V288 168c0-22.1 17.9-40 40-40h72c53 0 96 43 96 96s-43 96-96 96z" />
+                    </svg>
+                    <p class="spaceText">Free parking space</p>
+                </div>
+                <div class="flexCenter">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" width="20px"
+                        viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M309.5 178.4L447.9 297.1c-1.6 .9-3.2 2-4.8 3c-18 12.4-40.1 20.3-59.2 20.3c-19.6 0-40.8-7.7-59.2-20.3c-22.1-15.5-51.6-15.5-73.7 0c-17.1 11.8-38 20.3-59.2 20.3c-10.1 0-21.1-2.2-31.9-6.2C163.1 193.2 262.2 96 384 96h64c17.7 0 32 14.3 32 32s-14.3 32-32 32H384c-26.9 0-52.3 6.6-74.5 18.4zM160 160A64 64 0 1 1 32 160a64 64 0 1 1 128 0zM306.5 325.9C329 341.4 356.5 352 384 352c26.9 0 55.4-10.8 77.4-26.1l0 0c11.9-8.5 28.1-7.8 39.2 1.7c14.4 11.9 32.5 21 50.6 25.2c17.2 4 27.9 21.2 23.9 38.4s-21.2 27.9-38.4 23.9c-24.5-5.7-44.9-16.5-58.2-25C449.5 405.7 417 416 384 416c-31.9 0-60.6-9.9-80.4-18.9c-5.8-2.7-11.1-5.3-15.6-7.7c-4.5 2.4-9.7 5.1-15.6 7.7c-19.8 9-48.5 18.9-80.4 18.9c-33 0-65.5-10.3-94.5-25.8c-13.4 8.4-33.7 19.3-58.2 25c-17.2 4-34.4-6.7-38.4-23.9s6.7-34.4 23.9-38.4c18.1-4.2 36.2-13.3 50.6-25.2c11.1-9.4 27.3-10.1 39.2-1.7l0 0C136.7 341.2 165.1 352 192 352c27.5 0 55-10.6 77.5-26.1c11.1-7.9 25.9-7.9 37 0z" />
+                    </svg>
+                    <p class="spaceText">Outdoor Pool</p>
+                </div>
+                <div class="flexCenter">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" width="20px"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M224 0c17.7 0 32 14.3 32 32V62.1l15-15c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-49 49v70.3l61.4-35.8 17.7-66.1c3.4-12.8 16.6-20.4 29.4-17s20.4 16.6 17 29.4l-5.2 19.3 23.6-13.8c15.3-8.9 34.9-3.7 43.8 11.5s3.8 34.9-11.5 43.8l-25.3 14.8 21.7 5.8c12.8 3.4 20.4 16.6 17 29.4s-16.6 20.4-29.4 17l-67.7-18.1L287.5 256l60.9 35.5 67.7-18.1c12.8-3.4 26 4.2 29.4 17s-4.2 26-17 29.4l-21.7 5.8 25.3 14.8c15.3 8.9 20.4 28.5 11.5 43.8s-28.5 20.4-43.8 11.5l-23.6-13.8 5.2 19.3c3.4 12.8-4.2 26-17 29.4s-26-4.2-29.4-17l-17.7-66.1L256 311.7v70.3l49 49c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-15-15V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V449.9l-15 15c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l49-49V311.7l-61.4 35.8-17.7 66.1c-3.4 12.8-16.6 20.4-29.4 17s-20.4-16.6-17-29.4l5.2-19.3L48.1 395.6c-15.3 8.9-34.9 3.7-43.8-11.5s-3.7-34.9 11.5-43.8l25.3-14.8-21.7-5.8c-12.8-3.4-20.4-16.6-17-29.4s16.6-20.4 29.4-17l67.7 18.1L160.5 256 99.6 220.5 31.9 238.6c-12.8 3.4-26-4.2-29.4-17s4.2-26 17-29.4l21.7-5.8L15.9 171.6C.6 162.7-4.5 143.1 4.4 127.9s28.5-20.4 43.8-11.5l23.6 13.8-5.2-19.3c-3.4-12.8 4.2-26 17-29.4s26 4.2 29.4 17l17.7 66.1L192 200.3V129.9L143 81c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l15 15V32c0-17.7 14.3-32 32-32z" />
+                    </svg>
+                    <p class="spaceText">AC split-type ductless system</p>
+                </div>
+                <div class="flexCenter">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" width="20px"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M269.4 2.9C265.2 1 260.7 0 256 0s-9.2 1-13.4 2.9L54.3 82.8c-22 9.3-38.4 31-38.3 57.2c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C454.7 420.7 495.5 239.2 496 140c.1-26.2-16.3-47.9-38.3-57.2L269.4 2.9zM144 221.3c0-33.8 27.4-61.3 61.3-61.3c16.2 0 31.8 6.5 43.3 17.9l7.4 7.4 7.4-7.4c11.5-11.5 27.1-17.9 43.3-17.9c33.8 0 61.3 27.4 61.3 61.3c0 16.2-6.5 31.8-17.9 43.3l-82.7 82.7c-6.2 6.2-16.4 6.2-22.6 0l-82.7-82.7c-11.5-11.5-17.9-27.1-17.9-43.3z" />
+                    </svg>
+                    <p class="spaceText">Security cameras on property</p>
+                </div>
+                <div class="flexCenter">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30px" width="30px"
+                        viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M64 64V352H576V64H64zM0 64C0 28.7 28.7 0 64 0H576c35.3 0 64 28.7 64 64V352c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zM128 448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H128c-17.7 0-32-14.3-32-32s14.3-32 32-32z" />
+                    </svg>
+                    <p class="spaceText">32" HDTV with cable/satellite TV, standard cable/satellite</p>
+                </div>
+
+            </div>
+            <hr>
+            <div>Calender</div>
+            <hr>
+            <div>
+                <!-- <div>Review</div>   -->
+                <div class="reviewCont">
+                    <div class="reviewItem" *ngFor="let r of reviewList">
+                        <div>{{r.name}}</div>
+
+                        <div>
+                            <p>{{ r.reviewText.length > 140? r.reviewText.slice(0, 140) + '...' : r.reviewText }}</p>
+
+                            <div *ngIf="r.reviewText.length > 140">
+                                <button (click)="showPop()">Show More</button>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+            <hr>
+            <div>Loaction Info</div>
+            <hr>
+            <div>host Info</div>
+            <hr>
+            <div>Things to know</div>
+            <hr>
+
+
         </div>
         <div class="rateCard">
             <div><span>13,140, </span>
@@ -105,8 +235,78 @@
     </div>
 </div>
 
-<!-- 
-    rooms: {
-        name, rate, 
-    }
- -->
+<div class="lowerSection" [class.setBlur]="pop">
+    <hr>
+
+    <div class="footer">
+
+        <div>
+            <div class="dimtext">Airbnb > India > Gujrat > Katch</div>
+
+        </div>
+    </div>
+
+    <hr>
+    <div class="footer">
+        <div class="footerReg1">
+            <div>
+                <div>Support</div>
+                <div>
+                    <p class="dimtext">Help Center</p>
+                    <p class="dimtext">Air Cover</p>
+                    <p class="dimtext">Anti Discrimination</p>
+                    <p class="dimtext">Disability Support</p>
+                </div>
+            </div>
+            <div>
+                <div>Hosting</div>
+                <div>
+                    <p class="dimtext">airbnb Your Home</p>
+                    <p class="dimtext">AirCover for Hosts</p>
+                    <p class="dimtext">Community forum</p>
+                </div>
+            </div>
+            <div>
+                <div>Airbnb</div>
+                <div>
+                    <p class="dimtext">Newsroom</p>
+                    <p class="dimtext">New Features</p>
+                    <p class="dimtext">Careers</p>
+                    <p class="dimtext" class="dimtext">Investors</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footerConclude">
+            <div class="flexCenter">
+                <div class="spaceText">Airbnb</div>
+                <div class="spaceText">Privacy</div>
+                <div class="spaceText">Terms</div>
+                <div class="spaceText">Sitemap</div>
+                <div class="spaceText">Company Details</div>
+            </div>
+            <div class="flexCenter">
+                <div class="spaceText">English</div>
+                <div class="spaceText">Inr</div>
+                <div class="spaceText">Facebook</div>
+                <div class="spaceText">Twitter</div>
+                <div class="spaceText">Insta</div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<div class="reviewCardHidden" [class.reviewCardDisplay]="pop">
+    <svg xmlns="http://www.w3.org/2000/svg" height="20px" width="20px" (click)="closePop()" class="cross"
+        viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path
+            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+    </svg>
+    <!-- <app-popup [reviewExtended]="r.reviewText"></app-popup> -->
+    <app-popup [list]="reviewList"></app-popup>
+    
+</div>

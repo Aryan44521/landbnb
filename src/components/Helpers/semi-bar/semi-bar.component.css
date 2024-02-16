@@ -15,6 +15,7 @@
   align-items: center;
   justify-content: center;
   justify-content: space-evenly;
+  cursor: pointer;
 }
 
 .navbar .centralArea .logo .logoText {
@@ -22,6 +23,8 @@
   font-weight: 900;
   font-size: larger;
   letter-spacing: -1px;
+  padding-left: 20px;
+
 }
 
 .navbar .centralArea .dynamicArea {
@@ -140,4 +143,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.lhspace {
+  padding-left: 20px;
 }
